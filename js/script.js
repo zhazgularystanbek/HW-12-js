@@ -73,5 +73,6 @@ document.getElementById("book-form").addEventListener("submit", (e) =>{
 document.getElementById("book-list").addEventListener('click', (e) =>{
     const ui = new UI();
     ui.deleteBook(e.target);
-    ui.showAlert("Книга удалена!", "delete")
+    ui.showAlert("Книга удалена!", "delete");
+    e.preventDefault();
 })
